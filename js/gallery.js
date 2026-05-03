@@ -73,9 +73,9 @@ const galleryMarkup = images.map(item => {
   <a class="gallery-link" href=${original}>
     <img
       class="gallery-image"
-      src=${preview}
-      data-source=${original}
-      alt=${description}
+      src="${preview}"
+      data-source="${original}"
+      alt="${description}"
     />
   </a>
 </li>`
@@ -96,7 +96,7 @@ function handleGalleryClick(event) {
     const instance = basicLightbox.create( 
 	`<img
       class="modal-image"
-      src=${source}
+      src="${source}"
     />`
 )
 instance.show()}
