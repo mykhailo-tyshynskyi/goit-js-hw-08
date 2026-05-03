@@ -91,13 +91,15 @@ function handleGalleryClick(event) {
         return
     }
     event.preventDefault()
-    const source = event.target.dataset.source;
+    if (event.target.classList.contains("gallery-image"))
+    {const source = event.target.dataset.source;
     const instance = basicLightbox.create( 
 	`<img
       class="modal-image"
       src=${source}
     />`
 )
-instance.show()
+instance.show()}
+   
 
 }
